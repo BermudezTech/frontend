@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Informe proyecto Tecnología Mecánica</title>
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<p>Pick & Place System</p>
+		<div class="nav">
+			<ul>
+				<li><a href="#idea">Idea</a></li>
+				<li><a href="#galeria">Galería</a></li>
+				<li><a href="#final">Funcionamiento</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="info">
+			<h1>Sistema Pick & Place de posicionamiento de cajas</h1>
+			<h2>José Eduardo Bermúdez Garavito - M2B6031</h2>
+			<h2>Escuela Tecnológica Instituto Técnico Central</h2>
+		</div>
+	</div>
+	<div class="main">
+		<section id="idea">
+			<h1>Idea</h1><br>
+			<h3>Videos</h3><br>
+			<center>
+			<div class="videa">
+				<p><b>Video 1:</b> Top 6 Pneumatic System Projects using Pneumatic Cylinder Valve & Actuator <a href="https://youtu.be/Ke2Ni3CbYdk?t=68">https://youtu.be/Ke2Ni3CbYdk?t=68</a><br>
+				<b>Video 2:</b> DIY Conveyer Belt | Mechanical engineering Project <a href="https://www.youtube.com/watch?v=7RdySyKNVS8">https://www.youtube.com/watch?v=7RdySyKNVS8</a><br>
+				<b>Video 3:</b> Brazo Robótico con Sistema Hidráulico, Mano Robótica Como se Hacer | Sagaz Perenne <a href="https://www.youtube.com/watch?v=Do0a46PudbE">https://www.youtube.com/watch?v=Do0a46PudbE</a></p>
+			</div></center><br>
+			<p>
+				La idea surge de los tres videos anteriormente mencionados. El sistema pick & place, en la industria, es bastante usado para seleccionar y colocar productos. Estos procesos, son procesos repetitivos que pueden ser realizados por una máquina. El hecho de la creación de robots que facilitan esta tarea, tienen diferentes ventajas como reducción de tiempos, y minimiza los errores que puede realizar un humano en este trabajo. Estos robots, son bastante usados en automatización industrial hoy en día. <br><br>
+				En este caso, el proyecto se trata de una banda transportadora que contiene las cajas que salen de algún proceso de manufactura en específico. Estas cajas llegan al sistema a través de una banda transportadora (<a href="https://youtu.be/Ke2Ni3CbYdk?t=68">video 1</a>). Luego son recogidas por el brazo mecánico (<a href="https://www.youtube.com/watch?v=Do0a46PudbE">video 3</a>) que cumple la función del sistema Pick & Place, y finalmente, las cajas son posicionadas en un espacio donde luego serán recogidas para la distribución. <br><br>
+				<b>Ejemplo:</b>
+			</p>
+			<div class="col-2">
+				<img src="ejemplo1.png" alt="ejemplo1">
+				<img src="ejemplo2.png" alt="ejemplo2">
+			</div>
+			<p>Teniendo en cuenta lo anterior, el diseño que puede tener el proyecto es el siguiente:</p><br>
+			<center>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/shuD3u2_iCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</center>
+		</section>
+		<section id="galeria">
+			<h1>Galería</h1>
+			<p>A continuación se muestran algunas imagenes que fueron tomadas durante el proceso de construcción</p>
+			<div class="imagenes">
+				<img src="compressed/IMG_20201105_160607-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_160852-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_160909-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161011-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161038-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161112-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161124-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161200-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161213-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161228-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161323-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161335-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161511-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_161520-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_162225-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_162236-min.jpg" alt="" loading="lazy">
+				<img src="compressed/IMG_20201105_162245-min.jpg" alt="" loading="lazy">
+			</div>
+		</section>
+		<section id="final">
+			<h1>Funcionamiento</h1>
+			<p>El sistema realizado, cuenta con un circuito encargado de detectar los objetos (en este caso las cajas) que se mueven en la banda transportadora. Esto se realiza mediante un sensor infrarrojo. El sensor infrarrojo, envía la señal a una segunda parte del circuito que consiste en una compuerta lógica <i>NOT</i> para que la señal sea invertida. Por lo tanto, cuando el sensor detecta que hay una caja, la banda transportadora le manda la señal a la banda transportadora para que se detenga, y entra en juego el sistema Pick & Place mediante el brazo mecanico con el sistema hidraulico, que se encarga de agarrar las cajas y posicionarlas en el lugar indicado. <br><br>El sistema trabaja con una tensión de 3V, pero la velocidad del motor en ese momento es bastante. Por lo que mediante un divisor de tensión la corriente suministrada al motor sería de 1.5V para que la velocidad del motor sea óptima. A continuación el esquema del circuito utilizado:</p><br>
+			<center>
+				<img src="circuito.png" style="width: 70%;" loading="lazy">
+			</center>
+			Así mismo, el brazo robótico funciona mediante un sistema hidráulico casero, realizado con jeringas. A continuación se encuentra el <b>funcionamiento FINAL del sistema</b>:
+			<center>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/v0k5m-19h8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</center>
+		</section>
+	</div>
+</body>
+</html>

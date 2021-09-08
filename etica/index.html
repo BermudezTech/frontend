@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ética y sus postulados</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="eliminarCarga()">
+	<div class="cargando" id="cargando" style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.6); color: #fff; z-index: 5; font-size: 30px; text-align: center; padding-top: 30%;">Cargando...</div>
+	<div class="main">
+		<div class="contenedor" id="contenedor">
+			<div class="slideinicio">
+				<img src="inicio.png" class="slideimagen" />
+				<img src="iniciotexto.png" class="slidetexto" />
+			</div>
+			<div class="presentacion">
+				<h4>José Eduardo Bermúdez Garavito<br />
+				Ética M2B415<br />
+				Escuela Tecnológica Instituto Técnico Central<br />
+				2020</h4>
+			</div>
+			<div class="siguiente">
+				<button id="introduccion"><span>Siguiente</span><span class="flecha">➜</span></button>
+			</div>
+		</div>
+		<div class="footer" style="width: 80%;">
+			<h2>Ética de los filósofos a través de la historia</h2>
+			<h4>Hecho por: José Eduardo Bermúdez Garavito</h4>
+			<p>Bienvenido a la versión interactiva de la ética de los filósofos. En este pequeño tablón interactivo, podrás ver la perspectiva de cada uno de los filósofos acerca de la ética. Navega a través de este y descubre sobre el pensamiento de la ética de cada filósofo.</p>
+			<a href="etica.pdf">Descargar la versión en PDF</a>
+		</div>
+	</div>
+	<button id="personajes" style="visibility: hidden;"></button>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

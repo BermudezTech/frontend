@@ -1,0 +1,273 @@
+*{
+	font-family: sans-serif;
+}
+
+body{
+	background-image: linear-gradient(#328CF2,#328CF2);
+}
+
+.footer{
+	margin-top: 10px;
+	border-radius: 7px;
+	padding: 15px;
+	border: 1px solid #000;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.main{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contenedor{
+	width: 80%;
+	height: 600px;
+	border: 1px solid #000;
+	padding: 10px;
+	box-sizing: border-box;
+	background-image: url(../img/fondo.png);
+	background-size: 230%;
+	transition-duration: 2s;
+}
+
+.filosofos button{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.filosofos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 4px;
+	animation: aparecer 2s;
+}
+
+.filosofos button img{
+	width: 128px;
+	height: 128px;
+	border-radius: 100px;
+	border: 3px solid #000;
+	transition-duration: 0.5s;
+}
+
+.filosofos button span{
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 5px 5px 10px #000;
+}
+
+.filosofos button:hover span{
+	color: blue;
+}
+
+.filosofos button:hover img{
+	transform: translateY(-10px);
+	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.52);
+}
+
+.slideinicio{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.slideinicio img{
+	position: absolute;
+	width: 50%;
+}
+
+.slidetexto{
+	/*background-color: rgba(0,0,0,0.2);*/
+	border-radius: 7px;
+	padding: 10px;
+	box-sizing: border-box;
+	animation-name: abajo;
+	animation-duration: 0.7s;
+}
+
+@keyframes abajo{
+	0%{top: -200px;}
+	25%{top: -150px;}
+	50%{top: -100px;}
+	75%{top: -50px;}
+	100%{top: 0px;}
+}
+
+.slideimagen{
+	animation-name: ampliar;
+	animation-duration: 1s;
+}
+
+@keyframes ampliar{
+	0%{width: 0%; opacity: 0%}
+	25%{width: 12.5%; opacity: 25%}
+	50%{width: 25%; opacity: 50%}
+	75%{width: 37.5%; opacity: 75%}
+	100%{width: 50%; opacity: 100%}
+}
+
+.siguiente{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	animation: aparecer 2s;
+}
+
+@keyframes aparecer {
+	0%{opacity: 0%}
+	50%{opacity: 50%}
+	100%{opacity: 100%}
+}
+
+.siguiente button{
+	border: none;
+	background-image: linear-gradient(#007FEB, #00539A);
+	padding: 5px;
+	border-radius: 4px;
+	width: 150px;
+	display: flex;
+	color: #fff;
+	font-weight: bold;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+}
+
+.siguiente button:hover{
+	background-image: linear-gradient(#2C9CFB, #0678D9);
+}
+
+.siguiente button .flecha{
+	width: 32px;
+	height: 32px;
+	font-size: 23px;
+	background-color: #fff;
+	border-radius: 100px;
+	color: #000;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: flex-center;
+	padding: 0px;
+}
+
+.presentacion{
+	position: absolute;
+	top: 510px;
+	width: 100%;
+	text-shadow: 1px 1px 2px #fff;
+	/*background-color: rgba(0,0,0,0.1);*/
+	animation: aparecer 2s;
+}
+
+.personajeactivo{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.contenido{
+	width: 60%;
+	height: 500px;
+	background-color: #fff;
+	position: absolute;
+	top: 20px;
+	left: 25%;
+	text-align: justify;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border: 3px solid #000;
+	overflow-y: auto;
+	visibility: hidden;
+}
+
+.contenido button{
+	width: 32px;
+	height: 32px;
+	border: 2px solid #000;
+	background-color: #2982d0;
+	border-radius: 100px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #fff;
+	position: fixed;
+	right: 12%;
+}
+
+.contenido button:hover{
+	transform: translateY(-3px);
+	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.52);
+}
+
+.navegacion-personaje a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #2982d0;
+	padding: 5px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	top: 530px;
+	animation: cargando;
+	animation-duration: 2s;
+}
+
+@keyframes cargando{
+	0%{
+		height: 20px;
+	}
+	50%{
+		transform: scale(1.5);
+	}
+	100%{
+		height: 20px;
+	}
+}
+
+.navegacion-personaje a:hover{
+	opacity: 0.7;
+}
+
+.btn-biografia{
+	position: fixed;
+}
+
+.btn-etica{
+	left: 35%;
+	position: fixed;
+}
+
+.btn-video{
+	left: 47%;
+	position: fixed;
+}
+
+.resumentable td, .resumentable th{
+	padding: 10px;
+	box-sizing: border-box;
+	border: 3px solid #1D8EE5;
+}
+
+.resumentable th{
+	text-align: center;
+}
+
+.resumentable{
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
