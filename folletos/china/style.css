@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html,body{
+	margin: 0px;
+	padding: 0;
+	height: 100%;
+	background-color: #3E3E3E;
+}
+
+.contenedor{
+	width: 95%;
+	height: 90%;
+	margin: auto;
+	margin-bottom: 0;
+}
+
+.vista{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-areas: "pagina1 pagina2 pagina3";
+	height: 100%;
+}
+
+.pagina1{
+	grid-area: 'pagina1';
+	background-color: #5AC3EF;
+	height: 100%;
+	padding: 5px;
+	background-image: url(https://downloadwap.com/thumbs2/wallpapers/p2/2019/nature/48/6a8d3da113581302.jpg);
+}
+
+.pagina2{
+	grid-area: 'pagina2';
+	height: 100%;
+	padding: 5px;
+	background-image: url(https://i.pinimg.com/736x/65/95/f0/6595f070a5b756fced4b5f9f4ca5b9c2.jpg);
+	background-size: cover;
+}
+
+.pagina3{
+	grid-area: 'pagina3';
+	height: 100%;
+	padding: 5px;
+	background-image: url(https://i.pinimg.com/originals/7d/15/e1/7d15e1bf0bab2dcec9cda4e84826d872.jpg);
+	background-size: cover;
+}
+
+button{
+	background-color: #3B88C3;
+	border: none;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+button:hover{
+	opacity: 0.6;
+}
+
+#next{
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	color: #fff;
+}
+
+#previous{
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	color: #fff;
+}
+
+p{
+	background-color: rgba(186,186,186,0.7);
+	padding: 3px;
+	box-sizing: border-box;
+	border-radius: 7px;
+}
+
+.ubicacion{
+	background-color: #ddd;
+	border-radius: 0px;
+}
+
+.close-modal{
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	position: fixed;
+	right: 5%;
+	top: 5%;
+	color: #ffffff;
+	width: 32px;
+	height: 32px;
+}
+
+.modal{
+	position: fixed;
+	background-color: #0009;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenidomodal{
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	width: 80%;
+	height: 80%;
+	overflow-y: auto;
+}
+
+.lugar{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lugar:hover{
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	opacity: 0.9;
+}
+
+.galeria{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 100px 100px;
+	grid-template-columns: "100px 100px 100px 100px 100px";
+	grid-template-areas: "img img img img img"
+						 "img img img img img";
+}
+
+.galeria img{
+	width: 100%;
+	height: 100%;
+}
+
+.ubicacion-frame{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ubicacion-frame iframe{
+	width: 80%;
+	height: 100%;
+}
