@@ -1,0 +1,581 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url(fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "DMSansBold";
+  src: url(fonts/DMSans-Bold.ttf);
+}
+
+.hero {
+  width: 100%;
+  height: 53.125rem;
+  background-image: url(img/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.png);
+  background-size: cover;
+  margin-bottom: 8.2531rem;
+}
+
+.hero .hero-info {
+  max-width: 66.8125rem;
+  margin: auto;
+}
+
+.hero .hero-info p {
+  color: white;
+  font-family: "DMSans";
+  font-size: 1.25rem;
+  width: 26.75rem;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-family: "DMSansBold";
+  margin-top: 180px;
+  color: white;
+  width: 32.4375rem;
+}
+
+.overlay {
+  position: absolute;
+  background-image: linear-gradient(-288.73deg, rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.01));
+  width: 100%;
+  height: 53.125rem;
+}
+
+.overlay .listing {
+  max-width: 66.8125rem;
+  width: 66.8125rem;
+  margin: auto;
+  height: 6.25rem;
+  font-family: "DMSansBold";
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+header {
+  height: 3.125rem;
+  max-width: 66.8125rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "DMSans";
+  margin-top: 2rem;
+}
+
+nav {
+  height: inherit;
+}
+
+nav ul {
+  height: inherit;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "DMSansBold";
+}
+
+nav ul li.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  width: 13.1875rem;
+  height: 3.125rem;
+  background-color: #FFAC12;
+  border-radius: 0px 18px 0px 0px;
+  gap: 9px;
+  cursor: pointer;
+}
+
+nav ul li.btn p {
+  font-weight: bold;
+}
+
+.goodhands, .goodhands2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 77.375rem;
+}
+
+.goodhands img, .goodhands2 img {
+  width: 44rem;
+}
+
+.goodhands p, .goodhands2 p {
+  font-family: "DMSans";
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.goodhands button, .goodhands2 button {
+  width: 13.0625rem;
+  height: 4.375rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: "DMSansBold";
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.goodhands2 {
+  margin-top: 13.875rem;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  width: 169px;
+  height: 4px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFAC12), to(#000000));
+  background-image: linear-gradient(90deg, #FFAC12, #000000);
+}
+
+h1 {
+  font-family: "DMSansBold";
+  font-size: 3.125rem;
+  margin: 20px 0px;
+}
+
+.backlayer {
+  width: 100%;
+  height: 113.5625rem;
+  background-color: #f5f5f5;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateY(-216px);
+          transform: translateY(-216px);
+}
+
+.placelive {
+  width: 66.875rem;
+  margin: auto;
+}
+
+.placelive .selector {
+  width: 100%;
+  height: 7.5rem;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.placelive .selector div {
+  width: 16.6875rem;
+  height: 100%;
+  border-right: 1px solid #e4e4e4;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.placelive .selector div select {
+  border: none;
+  font-family: "DMSansBold";
+  font-size: 1.0625rem;
+}
+
+.houses {
+  margin-top: 4.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.houses .house {
+  width: 21rem;
+  height: 26.125rem;
+  background-color: white;
+  border-radius: 1.5625rem;
+}
+
+.houses .house img {
+  border-radius: 25px 25px 0 0;
+}
+
+.houses .house .description {
+  width: 100%;
+  height: 100%;
+}
+
+.houses .house .description h3 {
+  margin: 30px;
+  font-size: 1.5rem;
+  font-family: "DMSansBold";
+  font-weight: 800;
+}
+
+.houses .house .description .icons {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.houses .house .description .icons p {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  font-family: "DMSans";
+  font-size: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.houses .house .description .icons p:nth-child(n+2) {
+  border-left: 1px solid #e4e4e4;
+}
+
+.blackgoodhands {
+  width: 100%;
+  height: 42.125rem;
+  background-color: black;
+  color: white;
+}
+
+.blackgoodhands p {
+  font-family: "DMSans";
+}
+
+.blackgoodhands > div {
+  margin: auto;
+  width: 29.6875rem;
+  text-align: center;
+  padding-top: 9.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blackgoodhands .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  width: 13.1875rem;
+  height: 3.125rem;
+  background-color: #FFAC12;
+  border-radius: 0px 18px 0px 0px;
+  gap: 9px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.blackgoodhands .btn p {
+  font-weight: bold;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  width: 13.1875rem;
+  height: 3.125rem;
+  background-color: #FFAC12;
+  border-radius: 0px 18px 0px 0px;
+  gap: 9px;
+  cursor: pointer;
+  font-family: "DMSansBold";
+}
+
+.btn p {
+  font-weight: bold;
+}
+
+.clients {
+  width: 100%;
+  margin: 150px auto;
+}
+
+.clients .clients-box {
+  width: 66.8125rem;
+  height: 431px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 17.875rem 8.8125rem;
+      grid-template-rows: 17.875rem 8.8125rem;
+      grid-template-areas: "desc desc desc" "client1 client2 client3";
+}
+
+.clients .clients-box .client {
+  width: 21rem;
+  height: 8.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.clients .clients-box .client .client-info {
+  width: 10.625rem;
+  height: 3.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0 40px;
+}
+
+.clients .clients-box .client .client-info h3 {
+  font-family: "DMSansBold";
+  font-size: 0.9375rem;
+}
+
+.clients .clients-box .client .client-info p {
+  font-family: "DMSans";
+  font-size: 0.9375rem;
+  color: #979797;
+}
+
+.clients .clients-box .client .client-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clients .clients-box .client:nth-child(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: client1;
+}
+
+.clients .clients-box .client:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: client3;
+}
+
+.clients .clients-box .info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: desc;
+  width: 336px;
+  margin: auto;
+}
+
+.clients .clients-box .info .line {
+  width: 100%;
+  margin-bottom: 2.25rem;
+}
+
+.clients .clients-box .info p {
+  font-family: "DMSansBold";
+  font-size: 1.5rem;
+}
+
+.clients .clients-box .client.dark {
+  background-color: black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: client2;
+}
+
+.clients .clients-box .client.dark .client-info h3, .clients .clients-box .client.dark .client-info p {
+  color: white;
+}
+
+footer {
+  height: 34.4375rem;
+  background-color: black;
+}
+
+footer .footerInfo {
+  width: 66.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerInfo h1 {
+  color: white;
+  font-size: 2.625rem;
+}
+
+footer .footerInfo h1 span {
+  color: #FFAC12;
+}
+
+footer hr {
+  max-width: 66.8125rem;
+  color: #979797;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+footer .footerNav {
+  width: 66.8125rem;
+  margin: auto;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25.3125rem (1fr)[3];
+      grid-template-columns: 25.3125rem repeat(3, 1fr);
+  font-family: "DMSansBold";
+  font-size: 0.9375rem;
+}
+
+footer .footerNav .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+footer .footerNav .footerLinks .logo {
+  width: 8rem;
+}
+
+footer .footerNav .footerLinks .social {
+  width: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+footer .footerNav ul {
+  font-family: "DMSans";
+  list-style: none;
+}
+
+footer .footerNav ul li {
+  margin: 5px 0px;
+  color: #979797;
+}
+/*# sourceMappingURL=style.css.map */

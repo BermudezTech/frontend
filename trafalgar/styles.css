@@ -1,0 +1,627 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url(fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MulishBold";
+  src: url(fonts/Mulish-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MulishLight";
+  src: url(fonts/Mulish-Light.ttf);
+}
+
+header {
+  width: 123rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6.2rem;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+  font-family: "MulishBold";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo .icon {
+  width: 4.1rem;
+  height: 4.1rem;
+  font-size: 2.6rem;
+  background-color: #458FF6;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+header .logo .name {
+  font-size: 2.4rem;
+  color: #233348;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+header nav ul li {
+  font-family: "Mulish";
+  font-size: 1.8rem;
+  color: #1F1534;
+}
+
+header nav ul li.selected {
+  font-family: "MulishBold";
+}
+
+button {
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 5.5rem;
+  border: 1px solid #458FF6;
+  color: #458FF6;
+  font-family: "MulishBold";
+  font-size: 1.8rem;
+  background-color: white;
+}
+
+button.fill {
+  color: white;
+  background-color: #458FF6;
+}
+
+.hero {
+  width: 123rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero h1 {
+  font-family: "MulishBold";
+  font-size: 4.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero p {
+  font-family: "MulishLight";
+  font-size: 2.1rem;
+  margin-bottom: 4.5rem;
+}
+
+h2 {
+  font-family: "MulishBold";
+  font-size: 3.6rem;
+}
+
+.line {
+  width: 5.6rem;
+  height: .2rem;
+  background-color: black;
+  margin: auto;
+}
+
+.services {
+  margin-top: 19rem;
+  width: 123rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+.services p {
+  width: 95.2rem;
+  font-family: "MulishLight";
+  font-size: 1.8rem;
+  margin: auto;
+  margin-top: 3.3rem;
+  margin-bottom: 8rem;
+}
+
+.services .services-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3.4rem;
+  width: 123rem;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .services-box .service {
+  width: 35rem;
+  height: 35.4rem;
+  border-radius: 1rem;
+  padding-left: 3.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 9rem auto auto;
+      grid-template-rows: 9rem auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.services .services-box .service img {
+  margin-top: 6.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.services .services-box .service h3 {
+  font-family: "MulishBold";
+  font-size: 2.4rem;
+}
+
+.services .services-box .service p {
+  font-family: "MulishLight";
+  font-size: 1.6rem;
+  width: 26.6rem;
+  margin: 0;
+}
+
+.services button {
+  margin-top: 6.9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.providers, .mobile-apps {
+  margin-top: 22rem;
+  max-width: 127.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 13.7rem;
+}
+
+.providers > div, .mobile-apps > div {
+  width: 48.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.providers .line, .mobile-apps .line {
+  margin-top: 2.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.providers p, .mobile-apps p {
+  font-family: "MulishLight";
+  font-size: 1.8rem;
+  color: #7D7987;
+}
+
+.providers button, .mobile-apps button {
+  margin-top: 3.7rem;
+}
+
+.mobile-apps {
+  gap: 7.1rem;
+}
+
+.mobile-apps > div {
+  width: 42rem;
+}
+
+.mobile-apps > div button svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 15.43px;
+  height: 9.82px;
+}
+
+.testimonials {
+  width: 121.9rem;
+  height: 51.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 26.6rem;
+  position: relative;
+}
+
+.testimonials .slider {
+  width: 112rem;
+  height: 42.5rem;
+  background-image: linear-gradient(208.18deg, #67C3F3, #5A98F2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+}
+
+.testimonials .slider h2 {
+  font-family: "MulishBold";
+  font-size: 3.6rem;
+}
+
+.testimonials .slider .line {
+  background-color: white;
+  margin-top: 2.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.testimonials .slider > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .slider > div .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.9rem;
+}
+
+.testimonials .slider > div .client .client-info h4 {
+  font-family: "MulishBold";
+  font-size: 2.2rem;
+}
+
+.testimonials .slider > div .client .client-info p {
+  font-family: "Mulish";
+  font-size: 1.8rem;
+}
+
+.testimonials .slider > div .client img {
+  width: 14.1rem;
+  height: 14.1rem;
+}
+
+.testimonials .slider > div p {
+  width: 42rem;
+  font-family: "Mulish";
+  font-size: 1.9rem;
+}
+
+.testimonials .controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .controller svg {
+  margin: 0 9rem;
+}
+
+.testimonials .controller .left-arrow {
+  fill: #5B9BF330;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.testimonials .controller .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 18px;
+}
+
+.testimonials .controller .points .point {
+  width: 1rem;
+  height: 1rem;
+  background-color: #5B9BF330;
+  border-radius: 100%;
+}
+
+.testimonials .controller .points .point.active {
+  background-color: #5B9BF3;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles h2 {
+  margin-top: 22.2rem;
+  margin-bottom: 2.6rem;
+}
+
+.articles .line {
+  margin-bottom: 7.9rem;
+}
+
+.articles .articles-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.4rem;
+}
+
+.articles .articles-box .article {
+  width: 35rem;
+  height: 51.2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.articles .articles-box .article img {
+  border-radius: 10px 10px 0 0;
+}
+
+.articles .articles-box .article h4 {
+  margin-left: 3.4rem;
+  margin-top: 2.4rem;
+  font-family: "MulishBold";
+  font-size: 2.1rem;
+}
+
+.articles .articles-box .article p {
+  width: 26.6rem;
+  margin-top: 1.2rem;
+  margin-left: 3.4rem;
+  font-family: "MulishLight";
+  font-size: 1.6rem;
+}
+
+.articles .articles-box .article a {
+  font-family: "MulishBold";
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #4089ED;
+  display: block;
+  margin-top: 2.5rem;
+  margin-left: 3.4rem;
+}
+
+.articles .articles-box .article a svg {
+  width: 1.414rem;
+  height: .9rem;
+}
+
+.articles button {
+  margin-top: 6.9rem;
+}
+
+footer {
+  margin-top: 20rem;
+  background-image: linear-gradient(208.18deg, #67C3F3, #5A98F2);
+  width: 100%;
+  height: 43.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 14.5rem;
+  position: relative;
+}
+
+footer .trafalgar-info {
+  width: 39.1rem;
+}
+
+footer .trafalgar-info .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+  font-family: "MulishBold";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .trafalgar-info .logo .icon {
+  width: 4.1rem;
+  height: 4.1rem;
+  font-size: 2.6rem;
+  background-color: white;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5B9BF3;
+}
+
+footer .trafalgar-info .logo .name {
+  font-size: 2.4rem;
+  color: white;
+}
+
+footer .trafalgar-info p {
+  font-family: "MulishLight";
+  font-size: 1.8rem;
+  margin: 3rem 0;
+}
+
+footer div:nth-child(n+2) b {
+  font-family: "MulishBold";
+  font-size: 2rem;
+}
+
+footer div:nth-child(n+2) ul {
+  list-style: none;
+}
+
+footer div:nth-child(n+2) ul li {
+  font-family: "MulishLight";
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.decoration1 {
+  position: absolute;
+  top: 16rem;
+  z-index: -1;
+}
+
+.decoration2 {
+  position: absolute;
+  top: 84rem;
+  z-index: -1;
+}
+
+.decoration3 {
+  position: absolute;
+  top: 49rem;
+  z-index: -1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.decoration3 img {
+  width: 13.1rem;
+}
+
+.decoration4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.decoration5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.decoration5 img {
+  -webkit-transform: translate(-19px, 0px);
+          transform: translate(-19px, 0px);
+}
+/*# sourceMappingURL=styles.css.map */
