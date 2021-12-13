@@ -1,0 +1,172 @@
+function change(id){
+		switch(id){
+			case 1:
+				document.getElementById("d1").style.display = "block";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 2:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "block";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 3:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "block";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 4:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "block";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 5:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "block";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 6:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "block";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 7:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "block";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 8:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "block";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 9:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "block";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 10:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "block";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 11:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "block";
+				document.getElementById("d12").style.display = "none";
+			break;
+			case 12:
+				document.getElementById("d1").style.display = "none";
+				document.getElementById("d2").style.display = "none";
+				document.getElementById("d3").style.display = "none";
+				document.getElementById("d4").style.display = "none";
+				document.getElementById("d5").style.display = "none";
+				document.getElementById("d6").style.display = "none";
+				document.getElementById("d7").style.display = "none";
+				document.getElementById("d8").style.display = "none";
+				document.getElementById("d9").style.display = "none";
+				document.getElementById("d10").style.display = "none";
+				document.getElementById("d11").style.display = "none";
+				document.getElementById("d12").style.display = "block";
+			break;
+		}
+	}
