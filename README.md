@@ -1,7 +1,15 @@
-# Other repository
+# Frontend repository
 
 This repository contains some of the web development projects I've been making through my entire learning process, and some other 
-projects which doesn't require a full repository. Here is the description of the different folders in this repository:
+projects which doesn't require a full repository. You can check any of this projects by going to: https://bermudezweb.ga/frontend/foldername. Here is the description of the different folders in this repository:
+
+## allipingenieria
+
+Simple web page as a proposal for changing an old webpage which is http://allipingenieria.com.ar/. It includes a header similar to bootstrap but made from sketch, dropdown menu. It has resposive web design and kind of modern looking design according to the previously.
+
+## concentrese
+
+It was a simple experiment of how to make a simple game (memory game). It uses CSS animations and JavaScript to comprobe that the cards you flipped are the right ones. Then the cards get removed from the screen. My skills were not really advanced with JS at that time so if you click different cards in a quick way, it could crash.
 
 ## eticaSegunFilosofos
 
@@ -23,6 +31,18 @@ date.
 ## pickPlace
 
 A simple web page go through the process of describing a project. It has responsive design.
+
+## realstate
+
+It's the replication of a Figma design which is available on https://sleekui.com/resource/flowbase-real-estate-template. I made it in order to learn how to transform a sketch into a web page as accurate as possible. It's made with simple HTML5 and SCSS (Sass). This webpage has not responsive design and any functionality.
+
+## singlePageLabInform
+
+It's a simple webpage for a presentation. It's made to present a lab inform. It consist on a single web page application made with JS. All the information it's stored on a HTML file and with JS the information is hidded or showed according to the tab you're in. It has not responsive design.
+
+## trafalgar
+
+It's the replication of a Figma design which is available on https://sleekui.com/resource/trafalgar-landing-page. I made it in order to learn how to transform a sketch into a web page as accurate as possible. It's made with simple HTML5 and SCSS (Sass). This webpage has not responsive design and any functionality.
 
 ## turisticWays
 
