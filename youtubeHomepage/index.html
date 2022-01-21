@@ -29,10 +29,63 @@
             </button>
         </div>
     </header>
+    <div class="header-space"></div>
+    <div class="selector">
+        <ul>
+            <li class="selected">Todos</li>
+            <li>Kygo</li>
+            <li>Dua Lipa</li>
+            <li>Deep house</li>
+            <li>Salsa</li>
+            <li>Naturaleza</li>
+            <li>En tiempo real</li>
+            <li>Pop latino</li>
+            <li>Música</li>
+            <li>Listas de reproducción</li>
+            <li>Guitarra</li>
+            <li>Danny Berrios</li>
+            <li>Jazz</li>
+            <li>Comedia de sketches</li>
+            <li>The walt disney company</li>
+            <li>Música instrumental</li>
+            <li>Historial</li>
+            <li>Videojuegos</li>
+            <li>Subidos recientemente</li>
+        </ul>
+    </div>
     <div class="main">
         <section>
-            
+            <div class="add">
+                <div>
+                    <img src="img/youtubeMusic.png"/>
+                    <h1>Canciones sin anuncios con Music Premium</h1>
+                    <button>DESCARGAR AHORA</button>
+                    <button class="close">X</button>
+                </div>
+            </div>
+            <div style="padding: 20px;">
+                <h2>⚠ Info</h2><br />
+                <p>Esta es una réplica de la interfaz gráfica de YouTube hecha por José Eduardo Bermúdez de <a style="color: white;" href="https://bermudezweb.ga">BERMUDEZ WEB</a>, 
+                desarrollador web, con el fin de prácticar conceptos de CSS(Flexbox y Grid CSS)</p>
+            </div>
+            <div class="content">
+                <div class="grid" id="firstSection">
+                    
+                </div>
+                <hr/>
+                <h2>Noticias de último momento</h2>
+                <div class="grid" id="news">
+                    
+                </div>
+                <hr/>
+                <h2>Tendencias</h2>
+                <div class="grid" id="trend">
+                    
+                </div>
+                <hr/>
+            </div>
         </section>
+        <div class="aside-space"></div>
         <aside>
             <ul>
                 <li class="selected">
@@ -148,5 +201,21 @@
             </ul>
         </aside>
     </div>
+    <template id="video-template">
+        <div class="video">
+            <div class="thumbnail">
+                <img src="" class="thubnail"/>
+                <p>4:30</p>
+            </div>
+            <div class="info">
+                <img src="" class="profile">
+                <div class="text">
+                    <h4></h4>
+                    <p><span id="channel"></span><br><span id="video-info"></span></p>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script src="script/script.js"></script>
 </body>
 </html>

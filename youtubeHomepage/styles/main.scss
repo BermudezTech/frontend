@@ -10,6 +10,11 @@ $grey-text: #aaaaaa;
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -25,6 +30,7 @@ $grey-text: #aaaaaa;
 
 body{
     font-family: "Roboto";
+    background-color: $dark-grey;
 }
 
 header{
@@ -35,6 +41,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
     svg{
         width: 24px;
         height: 24px;
@@ -135,10 +144,160 @@ header{
         }
     }
 }
+.header-space{
+    height: 108px;
+    width: 100%;
+}
+
+.selector{
+    height: 56px;
+    width: calc(100% - 240px);
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    position: fixed;
+    background-color: $grey-background;
+    top: 56px;
+    left: 240px;
+    color: white;
+    z-index: 2;
+    ul{
+        display: flex;
+        height: inherit;
+        align-items: center;
+        gap: 10px;
+        font-size: .9rem;
+        padding: 0 10px;
+        li{
+            list-style: none;
+            height: 30px;
+            border-radius: 30px;
+            padding: 0 10px;
+            background-color: $border-color;
+            border: 1px solid rgba(red($grey-text), green($grey-text), blue($grey-text), .2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        li.selected{
+            background-color: white;
+            color: black;
+        }
+    }
+}
 
 .main{
     width: 100%;
     height: calc(100vh - 3.5rem);
+    display: flex;
+    color: white;
+    section{
+        width: calc(100% - 240px);
+        order: 2;
+        .add{
+            width: 100%;
+            height: 260px;
+            background-image: url(../img/music-add.PNG);
+            position: relative;
+            div{
+                width: 50%;
+                height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 20px;
+                img{
+                    width: fit-content;
+                    height: 24px;
+                }
+                button{
+                    width: 170px;
+                    height: 37px;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: white;
+                    cursor: pointer;
+                }
+                button.close{
+                    background-color: $grey-text;
+                    border: none;
+                    width: 24px;
+                    height: 24px;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    color: $dark-grey;
+                }
+            }
+        }
+        .content{
+            padding: 20px;
+            h2{
+                font-weight: normal;
+                font-size: 1.3rem;
+                padding: 20px 0;
+            }
+            hr{
+                border: 2px solid $border-color;
+            }
+            .grid{
+                padding: 20px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                width: 100%;
+                .video{
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    .thumbnail{
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        p{
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                            background-color: $dark-grey;
+                            padding: 3px 7px;
+                            border-radius: 3px;
+                            font-size: .9rem;
+                        }
+                    }
+                    .info{
+                        width: 100%;
+                        display: flex;
+                        img{
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 100%;
+                            margin-right: 10px;
+                        }
+                        .text{
+                            font-size: 0.875rem;
+                            line-height: 20px;
+                            h4{
+                                margin-top: 5px;
+                                height: 40px;
+                                font-family: "RobotoBold";
+                            }
+                            p{
+                                color: $grey-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aside-space{
+        width: 240px;
+        height: auto;
+    }
     aside{
         width: 240px;
         height: inherit;
@@ -147,6 +306,8 @@ header{
         overflow-y: scroll;
         padding: 12px 0;
         font-size: .9rem;
+        position: fixed;
+        top: 56px;
         ul li{
             list-style: none;
             height: 40px;
