@@ -3,10 +3,24 @@ $border-color: #303030;
 $dark-grey: #121212;
 $blue-border: #3ea6ff;
 $darkBlue-border: #065fd4;
+$grey-text: #aaaaaa;
 
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf");
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: $grey-background;
+}
+
+::-webkit-scrollbar-thumb{
+    background: $grey-text;
+    border-radius: 10px;
 }
 
 body{
@@ -118,6 +132,101 @@ header{
             svg{
                 fill: $blue-border;
             }
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    aside{
+        width: 240px;
+        height: inherit;
+        color: white;
+        background-color: $grey-background;
+        overflow-y: scroll;
+        padding: 12px 0;
+        font-size: .9rem;
+        ul li{
+            list-style: none;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            cursor: pointer;
+            img{
+                width: 24px;
+                height: 24px;
+                border-radius: 100%;
+                margin-right: 24px;
+            }
+        }
+        ul li.selected{
+            background-color: $border-color;
+        }
+        ul li.access{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 16px 32px;
+            gap: 10px;
+            align-items: flex-start;
+            button{
+                width: 120px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border: 1px solid $blue-border;
+                color: $blue-border;
+                font-size: .9rem;
+                gap: 4px;
+                svg{
+                    fill: $blue-border;
+                    margin-right: 0;
+                }
+            }
+        }
+        ul li.noHeight{
+            height: auto;
+        }
+        ul hr{
+            border: 1px solid $border-color;
+        }
+        ul li.bottomLinks{
+            display: flex;
+            flex-direction: column;
+            .section{
+                padding: 8px 10px;
+                width: 100%;
+                a{
+                    color: $grey-text;
+                    text-decoration: none;
+                    font-size: .8rem;
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+                p{
+                    color: $grey-text;
+                    font-size: .8rem;
+                    text-align: left;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        h3{
+            font-size: .9rem;
+            margin: 8px 0;
+            color: $grey-text;
+            padding: 8px 24px;
+        }
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: white;
+            margin-right: 24px;
         }
     }
 }

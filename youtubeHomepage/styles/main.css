@@ -3,6 +3,19 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 10px;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -170,5 +183,137 @@ header .options .login {
 
 header .options .login svg {
   fill: #3ea6ff;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 3.5rem);
+}
+
+.main aside {
+  width: 240px;
+  height: inherit;
+  color: white;
+  background-color: #202020;
+  overflow-y: scroll;
+  padding: 12px 0;
+  font-size: .9rem;
+}
+
+.main aside ul li {
+  list-style: none;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+.main aside ul li img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-right: 24px;
+}
+
+.main aside ul li.selected {
+  background-color: #303030;
+}
+
+.main aside ul li.access {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 32px;
+  gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main aside ul li.access button {
+  width: 120px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+  font-size: .9rem;
+  gap: 4px;
+}
+
+.main aside ul li.access button svg {
+  fill: #3ea6ff;
+  margin-right: 0;
+}
+
+.main aside ul li.noHeight {
+  height: auto;
+}
+
+.main aside ul hr {
+  border: 1px solid #303030;
+}
+
+.main aside ul li.bottomLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main aside ul li.bottomLinks .section {
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.main aside ul li.bottomLinks .section a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.main aside ul li.bottomLinks .section p {
+  color: #aaaaaa;
+  font-size: .8rem;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.main aside h3 {
+  font-size: .9rem;
+  margin: 8px 0;
+  color: #aaaaaa;
+  padding: 8px 24px;
+}
+
+.main aside svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 24px;
 }
 /*# sourceMappingURL=main.css.map */
