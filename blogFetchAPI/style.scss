@@ -66,6 +66,12 @@ footer{
     margin: 0 auto;
     padding: 20px;
     overflow-y: auto;
+    .img-wrapper{
+        display: flex; 
+        gap: 10px; 
+        margin-top: 10px; 
+        align-items: center;
+    }
 }
 
 form{
@@ -78,5 +84,34 @@ form{
     }
     textarea{
         padding: 5px;
+    }
+}
+
+@mixin mediaQ($screenSize){
+    @media only screen and (max-width: $screenSize) {
+        @content;
+    }
+}
+
+@include mediaQ(500px){
+    .root{
+        width: 95%;
+        img{
+            width: 80%;
+        }
+    }
+    header{
+        height: 120px;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    footer{
+        height: 80px;
+    }
+}
+
+@include mediaQ(800px){
+    .img-wrapper{
+        flex-direction: column;
     }
 }
