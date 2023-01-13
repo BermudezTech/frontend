@@ -223,14 +223,21 @@ main aside:nth-child(1) {
   left: 0px;
 }
 main aside:nth-child(3) {
-  background-color: red;
   z-index: -1;
   position: fixed;
   top: 56px;
   right: 0px;
 }
-main .mainSection {
+
+.mainSection {
   width: 500px;
-  background: red;
   margin-top: 56px;
+}
+.mainSection .postContainer {
+  width: 100%;
+  height: auto;
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
 }/*# sourceMappingURL=style.css.map */

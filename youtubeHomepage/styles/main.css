@@ -2,12 +2,10 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
-
 @font-face {
   font-family: "RobotoBold";
   src: url("../fonts/Roboto-Bold.ttf");
 }
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 2px;
@@ -32,39 +30,25 @@ header {
   height: 3.5rem;
   background-color: #202020;
   padding: 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   z-index: 2;
 }
-
 header svg {
   width: 24px;
   height: 24px;
 }
-
 header button, header .yt-logo {
   cursor: pointer;
 }
-
 header .logo {
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header .logo button {
   background-color: transparent;
   border: none;
@@ -72,37 +56,27 @@ header .logo button {
   width: 24px;
   height: 24px;
   padding: 8px;
-  -webkit-box-sizing: initial;
-          box-sizing: initial;
+  box-sizing: initial;
 }
-
 header .logo button:hover {
   background-color: #303030;
 }
-
 header .logo .yt-logo {
   width: 100px;
   height: 26px;
   margin: 18px 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  color: #b8b8b8;
-  font-size: .6rem;
+  color: rgb(184, 184, 184);
+  font-size: 0.6rem;
 }
-
 header .logo .yt-logo svg {
   fill: white;
   margin-right: 2px;
 }
-
 header .search-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
-
 header .search-bar input {
   height: 40px;
   width: 100%;
@@ -112,98 +86,63 @@ header .search-bar input {
   background-color: #121212;
   color: white;
 }
-
 header .search-bar input:focus {
   outline: none;
   border-color: #065fd4;
 }
-
 header .search-bar .search {
   width: 64px;
   height: 40px;
   background-color: #303030;
   border: 1px solid #303030;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-right: 8px;
 }
-
 header .search-bar .voice {
   width: 40px;
   height: 40px;
   background-color: #121212;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 100%;
   margin-left: 8px;
 }
-
 header .search-bar .voice:hover {
   background-color: #303030;
 }
-
 header .options {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .options .apps, header .options .options-btn {
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   margin: 0 5px;
   border-radius: 100%;
 }
-
 header .options .apps:hover, header .options .options-btn:hover {
   background-color: #303030;
 }
-
 header .options .login {
   width: 120px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: 1px solid #3ea6ff;
   color: #3ea6ff;
-  font-size: .9rem;
+  font-size: 0.9rem;
   gap: 4px;
 }
-
 header .options .login svg {
   fill: #3ea6ff;
 }
@@ -227,20 +166,14 @@ header .options .login svg {
   overflow-y: clip;
   overflow-x: scroll;
 }
-
 .selector ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 0 10px;
 }
-
 .selector ul li {
   list-style: none;
   height: 30px;
@@ -248,24 +181,16 @@ header .options .login svg {
   padding: 0 10px;
   background-color: #303030;
   border: 1px solid rgba(170, 170, 170, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
   cursor: pointer;
 }
-
 .selector ul li:hover {
   background-color: #aaaaaa;
   color: black;
 }
-
 .selector ul li.selected {
   background-color: white;
   color: black;
@@ -274,19 +199,13 @@ header .options .login svg {
 .main {
   width: 100%;
   height: calc(100vh - 3.5rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
 }
-
 .main section {
   width: calc(100% - 240px);
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
-
 .main section .add {
   width: 100%;
   height: 260px;
@@ -295,30 +214,20 @@ header .options .login svg {
   background-position-x: center;
   position: relative;
 }
-
 .main section .add div {
   width: 50%;
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 20px;
 }
-
 .main section .add div img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 24px;
 }
-
 .main section .add div button {
   width: 170px;
   height: 37px;
@@ -327,7 +236,6 @@ header .options .login svg {
   color: white;
   cursor: pointer;
 }
-
 .main section .add div button.close {
   background-color: #aaaaaa;
   border: none;
@@ -339,51 +247,36 @@ header .options .login svg {
   right: 10px;
   color: #121212;
 }
-
 .main section .content {
   padding: 20px;
 }
-
 .main section .content h2 {
   font-weight: normal;
   font-size: 1.3rem;
   padding: 20px 0;
 }
-
 .main section .content hr {
   border: 2px solid #303030;
 }
-
 .main section .content .grid {
   padding: 20px 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   width: 100%;
 }
-
 .main section .content .grid .video {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   cursor: pointer;
 }
-
 .main section .content .grid .video .thumbnail {
   position: relative;
 }
-
 .main section .content .grid .video .thumbnail img {
   width: 100%;
   height: auto;
 }
-
 .main section .content .grid .video .thumbnail p {
   position: absolute;
   bottom: 10px;
@@ -391,47 +284,37 @@ header .options .login svg {
   background-color: #121212;
   padding: 3px 7px;
   border-radius: 3px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
 .main section .content .grid .video .info {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .main section .content .grid .video .info img {
   width: 36px;
   height: 36px;
   border-radius: 100%;
   margin-right: 10px;
 }
-
 .main section .content .grid .video .info .text {
   font-size: 0.875rem;
   line-height: 20px;
 }
-
 .main section .content .grid .video .info .text h4 {
   margin-top: 5px;
   height: 40px;
   font-family: "RobotoBold";
 }
-
 .main section .content .grid .video .info .text p {
   color: #aaaaaa;
 }
-
 .main .aside-space {
   width: 240px;
   height: auto;
 }
-
 .main aside.small {
   display: none;
 }
-
 .main aside {
   width: 240px;
   height: inherit;
@@ -439,137 +322,98 @@ header .options .login svg {
   background-color: #202020;
   overflow-y: scroll;
   padding: 12px 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   position: fixed;
   top: 56px;
 }
-
 .main aside ul li {
   list-style: none;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 24px;
   cursor: pointer;
 }
-
 .main aside ul li img {
   width: 24px;
   height: 24px;
   border-radius: 100%;
   margin-right: 24px;
 }
-
 .main aside ul li:hover {
   background-color: #303030;
 }
-
 .main aside ul li.selected {
   background-color: #303030;
 }
-
 .main aside ul li.access {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 16px 32px;
   gap: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
-
 .main aside ul li.access button {
   width: 120px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: 1px solid #3ea6ff;
   color: #3ea6ff;
-  font-size: .9rem;
+  font-size: 0.9rem;
   gap: 4px;
   cursor: pointer;
 }
-
 .main aside ul li.access button svg {
   fill: #3ea6ff;
   margin-right: 0;
 }
-
 .main aside ul li.access:hover {
   background-color: inherit;
   cursor: initial;
 }
-
 .main aside ul li.noHeight {
   height: auto;
 }
-
 .main aside ul li.noHeight:hover {
   background-color: inherit;
   cursor: initial;
 }
-
 .main aside ul hr {
   border: 1px solid #303030;
   margin: 10px 0;
 }
-
 .main aside ul li.bottomLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .main aside ul li.bottomLinks .section {
   padding: 8px 10px;
   width: 100%;
 }
-
 .main aside ul li.bottomLinks .section a {
   color: #aaaaaa;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   margin-right: 5px;
 }
-
 .main aside ul li.bottomLinks .section p {
   color: #aaaaaa;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: left;
   display: block;
   width: 100%;
 }
-
 .main aside h3 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 8px 0;
   color: #aaaaaa;
   padding: 8px 24px;
 }
-
 .main aside svg {
   width: 24px;
   height: 24px;
@@ -588,13 +432,8 @@ header .options .login svg {
   .main aside.small {
     display: block;
     width: 72px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0;
     overflow-y: auto;
   }
@@ -604,16 +443,9 @@ header .options .login svg {
   }
   .main aside.small ul li {
     height: 74px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0 0;
     width: inherit;
     padding: 0;
@@ -623,7 +455,7 @@ header .options .login svg {
     margin-bottom: 6px;
   }
   .main aside.small ul li p {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   .main .aside-space {
     width: 72px;
@@ -632,18 +464,14 @@ header .options .login svg {
     width: calc(100% - 72px);
   }
   .main section .content .grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media only screen and (max-width: 880px) {
   .main section .content .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media only screen and (max-width: 808px) {
   .selector {
     width: 100%;
@@ -659,14 +487,11 @@ header .options .login svg {
     width: 0;
   }
 }
-
 @media only screen and (max-width: 512px) {
   .main section .add h1 {
     font-size: 1rem;
   }
   .main section .content .grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

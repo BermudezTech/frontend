@@ -1,61 +1,42 @@
 body {
   font-family: sans-serif;
-  background-color: #cacaca;
+  background-color: rgb(202, 202, 202);
 }
 
 header {
   width: 100%;
   height: 60px;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   padding: 0px 40px;
 }
-
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
 }
-
 header .logo img {
   width: 50px;
   height: 50px;
   border-radius: 100%;
 }
-
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-
 header nav ul li {
   list-style-type: none;
 }
-
 header nav ul li a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  -webkit-transition: .2s ease color;
-  transition: .2s ease color;
+  transition: 0.2s ease color;
 }
-
 header nav ul li a:hover {
   color: blue;
 }
@@ -69,14 +50,9 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 footer a {
   color: inherit;
 }
@@ -89,34 +65,22 @@ footer a {
   padding: 20px;
   overflow-y: auto;
 }
-
 .root .img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5px;
 }
-
 form input {
   height: 30px;
   padding: 0 5px;
 }
-
 form textarea {
   padding: 5px;
 }
@@ -130,23 +94,15 @@ form textarea {
   }
   header {
     height: 120px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 20px 0;
   }
   footer {
     height: 80px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .img-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
