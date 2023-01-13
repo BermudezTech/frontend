@@ -178,7 +178,6 @@ main
         top: 56px
         left: 0px
     aside:nth-child(3)
-        z-index: -1
         position: fixed
         top: 56px
         right: 0px        
@@ -193,3 +192,89 @@ main
         border-radius: 10px
         padding: 1rem
         margin: 1rem 0
+        .links
+            width: 100%
+            color: white
+            display: flex
+            justify-content: space-between
+            align-items: center
+            >span
+                width: 100%
+                height: 40px
+                display: flex
+                justify-content: center
+                align-items: baseline
+                box-sizing: border-box
+                &:first-child
+                    color: $blue
+                    border-bottom: 2px solid $blue
+                    a:hover
+                        background-color: transparent
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: .5rem
+                width: 90%
+                height: 90%
+                border-radius: 10px
+                font-weight: bold
+                cursor: pointer
+                &:hover
+                    background-color: $grayHover
+                img
+                    width: 24px
+                    height: 24px
+                label
+                    cursor: inherit
+        .histories
+            display: flex
+            width: 100%
+            color: white
+            font-weight: bold
+            gap: .5rem
+            margin: 10px 0
+            .history
+                width: 150px
+                height: 200px
+                border-radius: 10px
+                display: flex
+                align-items: flex-end
+                padding: 10px
+                background-size: auto 100%
+                background-color: rgba($darkGray, .3)
+                background-blend-mode: multiply
+                cursor: pointer
+                &:hover
+                    opacity: .8
+                    background-size: auto 103%
+                    transition: background-size 250ms
+                    transition: opacity 250ms
+                &.new
+                    padding: 0
+                    position: relative
+                    > div
+                        position: absolute
+                        left: calc(50% - 16px)
+                        top: calc(200px - 70px)
+                        background-color: $blue
+                        border-radius: 100%
+                        width: 32px
+                        height: 32px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-size: 2rem
+                        font-weight: 300
+                        border: 1px solid $darkGray
+                    span
+                        width: 100%
+                        height: 50px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        padding: 10px 0
+                        border-radius: 0 0 10px 10px
+                        background-color: $darkGray
+                        text-align: center
+
