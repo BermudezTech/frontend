@@ -1,0 +1,189 @@
+@import 'setup'
+
+body
+    background-color: $darkGray
+
+header
+    width: 100%
+    height: 56px
+    background-color: $mediumGray
+    border-bottom: 1px solid $lightGray
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 1rem
+    position: fixed
+    label
+        position: absolute
+        top: 60px
+        color: $lightGray
+        background-color: $lightGrayText
+        padding: 8px 15px
+        border-radius: 7px
+        font-size: .8rem
+        opacity: 0
+        transition: opacity 500ms
+        &:hover
+            display: none
+    .search
+        width: 20%
+        height: 100%
+        display: flex
+        align-items: center
+        > img
+            cursor: pointer
+        .searchBar
+            height: 40px
+            background-color: $lightGray
+            border-radius: 25px
+            width: 100%
+            margin-left: 1rem
+            display: flex
+            align-items: center
+            padding: 0 20px
+            img,span
+                width: 1rem
+                height: 1rem
+            input
+                height: 80%
+                background-color: transparent
+                border: none
+                margin-left: 10px
+                caret-color: white
+                color: white
+                font-size: 1rem
+                &::placeholder
+                    font-size: .9rem
+                    color: #b0b3b8
+                &:focus
+                    outline: none
+    .links
+        width: 50%
+        height: 100%
+        display: flex
+        justify-content: center
+        //flex-grow: 2
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 60px
+            max-width: 111.59px
+            width: 100%
+            span
+                width: 100%
+                height: 80%
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                &:hover
+                    background-color: $lightGray
+            img
+                width: 28px
+            &.active
+                border-bottom: 2px solid $blue
+            &:hover
+                label
+                    opacity: 1
+    .menu
+        display: flex
+        align-items: center
+        gap: .7rem
+        button
+            width: 40px
+            height: 40px
+            background-color: $lightGray
+            border: none
+            border-radius: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            &:hover
+                background-color: $grayHover
+                img
+                    opacity: 0.8
+                label
+                    opacity: 1
+            img
+                width: 20px
+                height: 20px
+                &.profile
+                    width: 100%
+                    height: 100%
+                    border-radius: 100%
+
+aside
+    min-width: 280px
+    max-width: 300px
+    height: calc(100vh - 56px)
+    padding: 1rem 1rem
+    color: white
+    font-weight: 600
+    overflow-y: auto
+
+aside
+    .menu-btn
+        width: 100%
+        height: 44px
+        border-radius: 7px
+        cursor: pointer
+        display: flex
+        gap: .5rem
+        align-items: center
+        font-size: .9rem
+        padding: 0 .9rem
+        label
+            cursor: inherit
+        &:hover
+            background-color: $lightGray
+    .main-menu
+        img
+            border-radius: 100%
+            width: 36px
+            height: 36px
+        i
+            @extend img
+            background-size: cover
+        hr
+            margin: 1rem 0
+            border: .7px solid $lightGray
+        h3
+            color: $grayText
+            font-size: 1rem
+    .links
+        a
+            font-weight: 400
+            font-size: .8rem
+            color: $grayText
+            &::after 
+                content: '·'
+                font-size: 1rem
+                font-weight: bold
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+            &:nth-last-child(1)::after
+                content: ''
+                
+            
+main
+    display: flex
+    justify-content: center
+    aside:nth-child(1)
+        //background-color: red
+        position: fixed
+        top: 56px
+        left: 0px
+    aside:nth-child(3)
+        background-color: red
+        z-index: -1
+        position: fixed
+        top: 56px
+        right: 0px
+    .mainSection
+        width: 500px
+        background: red
+        margin-top: 56px

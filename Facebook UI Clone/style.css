@@ -1,0 +1,236 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #18191a;
+}
+
+header {
+  width: 100%;
+  height: 56px;
+  background-color: #242526;
+  border-bottom: 1px solid #3a3b3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+}
+header label {
+  position: absolute;
+  top: 60px;
+  color: #3a3b3c;
+  background-color: #e4e6eb;
+  padding: 8px 15px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+header label:hover {
+  display: none;
+}
+header .search {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .search > img, header aside .main-menu .search > i, aside .main-menu header .search > i {
+  cursor: pointer;
+}
+header .search .searchBar {
+  height: 40px;
+  background-color: #3a3b3c;
+  border-radius: 25px;
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+header .search .searchBar img, header .search .searchBar aside .main-menu i, aside .main-menu header .search .searchBar i, header .search .searchBar span {
+  width: 1rem;
+  height: 1rem;
+}
+header .search .searchBar input {
+  height: 80%;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  caret-color: white;
+  color: white;
+  font-size: 1rem;
+}
+header .search .searchBar input::-moz-placeholder {
+  font-size: 0.9rem;
+  color: #b0b3b8;
+}
+header .search .searchBar input:-ms-input-placeholder {
+  font-size: 0.9rem;
+  color: #b0b3b8;
+}
+header .search .searchBar input::placeholder {
+  font-size: 0.9rem;
+  color: #b0b3b8;
+}
+header .search .searchBar input:focus {
+  outline: none;
+}
+header .links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  max-width: 111.59px;
+  width: 100%;
+}
+header .links a span {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+header .links a span:hover {
+  background-color: #3a3b3c;
+}
+header .links a img, header .links a aside .main-menu i, aside .main-menu header .links a i {
+  width: 28px;
+}
+header .links a.active {
+  border-bottom: 2px solid #2374e1;
+}
+header .links a:hover label {
+  opacity: 1;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+header .menu button {
+  width: 40px;
+  height: 40px;
+  background-color: #3a3b3c;
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header .menu button:hover {
+  background-color: #4e4f50;
+}
+header .menu button:hover img, header .menu button:hover aside .main-menu i, aside .main-menu header .menu button:hover i {
+  opacity: 0.8;
+}
+header .menu button:hover label {
+  opacity: 1;
+}
+header .menu button img, header .menu button aside .main-menu i, aside .main-menu header .menu button i {
+  width: 20px;
+  height: 20px;
+}
+header .menu button img.profile, header .menu button aside .main-menu i.profile, aside .main-menu header .menu button i.profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+aside {
+  min-width: 280px;
+  max-width: 300px;
+  height: calc(100vh - 56px);
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: 600;
+  overflow-y: auto;
+}
+
+aside .menu-btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 0 0.9rem;
+}
+aside .menu-btn label {
+  cursor: inherit;
+}
+aside .menu-btn:hover {
+  background-color: #3a3b3c;
+}
+aside .main-menu img, aside .main-menu i {
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+}
+aside .main-menu i {
+  background-size: cover;
+}
+aside .main-menu hr {
+  margin: 1rem 0;
+  border: 0.7px solid #3a3b3c;
+}
+aside .main-menu h3 {
+  color: #b0b3b8;
+  font-size: 1rem;
+}
+aside .links a {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #b0b3b8;
+}
+aside .links a::after {
+  content: "·";
+  font-size: 1rem;
+  font-weight: bold;
+}
+aside .links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+aside .links a:nth-last-child(1)::after {
+  content: "";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main aside:nth-child(1) {
+  position: fixed;
+  top: 56px;
+  left: 0px;
+}
+main aside:nth-child(3) {
+  background-color: red;
+  z-index: -1;
+  position: fixed;
+  top: 56px;
+  right: 0px;
+}
+main .mainSection {
+  width: 500px;
+  background: red;
+  margin-top: 56px;
+}/*# sourceMappingURL=style.css.map */
