@@ -1,3 +1,5 @@
+import { printPosts } from "./printPosts.js";
+
 let $mainMenu = document.querySelector(".main-menuItems"),
     $shorcutsMenu = document.querySelector(".shorcuts-menu"),
     $friendsMenu = document.querySelector(".friends-menu"),
@@ -197,3 +199,5 @@ $friendsMenu.appendChild($fragment);
 $fragment = document.createDocumentFragment();
 group.forEach(el => createButtons(el));
 $groupsMenu.appendChild($fragment);
+
+printPosts();

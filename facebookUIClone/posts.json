@@ -1,0 +1,46 @@
+[
+    {
+        "profile": "https://picsum.photos/1280/720?random=4",
+        "name": "Harry Cunningham",
+        "time": "20h",
+        "type": "public",
+        "message": "",
+        "imgs": [],
+        "likes": 20,
+        "comments": 5,
+        "shared": 0
+    },
+    {
+        "profile": "https://picsum.photos/1280/720?random=6",
+        "name": "Deegan Mclaughlin",
+        "time": "2d",
+        "type": "friends",
+        "message": "",
+        "imgs": [],
+        "likes": 0,
+        "comments": 0,
+        "shared": 0
+    },
+    {
+        "profile": "https://picsum.photos/1280/720?random=8",
+        "name": "Camren Bush",
+        "time": "5m",
+        "type": "public",
+        "message": "",
+        "imgs": [],
+        "likes": 1,
+        "comments": 2,
+        "shared": 0
+    },
+    {
+        "profile": "https://picsum.photos/1280/720?random=2",
+        "name": "Freddie Matthews",
+        "time": "20d",
+        "type": "public",
+        "message": "",
+        "imgs": [],
+        "likes": 2,
+        "comments": 0,
+        "shared": 2
+    }
+]

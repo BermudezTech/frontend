@@ -20,6 +20,7 @@ header {
   align-items: center;
   padding: 0 1rem;
   position: fixed;
+  z-index: 2;
 }
 header label {
   position: absolute;
@@ -239,6 +240,7 @@ main aside:nth-child(3) {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem 0;
+  color: white;
 }
 .mainSection .postContainer .links {
   width: 100%;
@@ -306,12 +308,12 @@ main aside:nth-child(3) {
 .mainSection .postContainer .histories .history:hover {
   opacity: 0.8;
   background-size: auto 103%;
-  transition: background-size 250ms;
-  transition: opacity 250ms;
+  transition: background-size 250ms, opacity 250ms;
 }
 .mainSection .postContainer .histories .history.new {
   padding: 0;
   position: relative;
+  z-index: 1;
 }
 .mainSection .postContainer .histories .history.new > div {
   position: absolute;
@@ -338,4 +340,236 @@ main aside:nth-child(3) {
   border-radius: 0 0 10px 10px;
   background-color: #18191a;
   text-align: center;
+}
+.mainSection .postContainer .thoughts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mainSection .postContainer .thoughts img, .mainSection .postContainer .thoughts aside .main-menu i, aside .main-menu .mainSection .postContainer .thoughts i {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.mainSection .postContainer .thoughts input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3a3b3c;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+.mainSection .postContainer .thoughts input::-moz-placeholder {
+  font-size: 1rem;
+  color: #b0b3b8;
+}
+.mainSection .postContainer .thoughts input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #b0b3b8;
+}
+.mainSection .postContainer .thoughts input::placeholder {
+  font-size: 1rem;
+  color: #b0b3b8;
+}
+.mainSection .postContainer .thoughts input:focus {
+  outline: none;
+}
+.mainSection .postContainer hr {
+  margin: 0.8rem 0;
+  border: 0.7px solid #3a3b3c;
+}
+.mainSection .postContainer .buttons-thoughts {
+  display: flex;
+  align-items: center;
+}
+.mainSection .postContainer .buttons-thoughts button {
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  color: #e4e6eb;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+.mainSection .postContainer .buttons-thoughts button:hover {
+  background-color: #3a3b3c;
+}
+.mainSection .postContainer .buttons-thoughts button i {
+  width: 24px;
+  height: 24px;
+}
+.mainSection .postContainer .head {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.mainSection .postContainer .head img, .mainSection .postContainer .head aside .main-menu i, aside .main-menu .mainSection .postContainer .head i {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.mainSection .postContainer .head .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mainSection .postContainer .head .profile .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.mainSection .postContainer .head .profile .name {
+  font-weight: bold;
+}
+.mainSection .postContainer .head .profile .name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mainSection .postContainer .head .profile .time {
+  color: #b0b3b8;
+}
+.mainSection .postContainer .head .profile .time:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mainSection .postContainer .head .profile .time i {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.mainSection .postContainer .head .profile .time .public {
+  background-image: url("img/icons/public.svg");
+  background-size: 100%;
+  position: relative;
+}
+.mainSection .postContainer .head .profile .time .public::after {
+  content: "Público";
+  position: absolute;
+  top: -35px;
+  left: -30px;
+  font-style: normal;
+  color: #3a3b3c;
+  background-color: #e4e6eb;
+  padding: 8px 15px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.mainSection .postContainer .head .profile .time .public::after:hover {
+  display: none;
+}
+.mainSection .postContainer .head .profile .time .public:hover::after {
+  opacity: 1;
+}
+.mainSection .postContainer .head .options {
+  display: flex;
+}
+.mainSection .postContainer .head .options button {
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mainSection .postContainer .head .options button img, .mainSection .postContainer .head .options button aside .main-menu i, aside .main-menu .mainSection .postContainer .head .options button i {
+  width: 60%;
+  height: 60%;
+}
+.mainSection .postContainer .head .options button:hover {
+  background-color: #4e4f50;
+}
+.mainSection .postContainer .message {
+  padding: 0 1rem;
+}
+.mainSection .postContainer .imgGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px 150px;
+  width: 100%;
+  height: 400px;
+  gap: 4px;
+}
+.mainSection .postContainer .imgGrid div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.mainSection .postContainer .imgGrid div:nth-child(1) {
+  grid-column: span 3;
+}
+.mainSection .postContainer .imgGrid div:nth-child(2) {
+  grid-column: span 3;
+}
+.mainSection .postContainer .imgGrid div:nth-child(3) {
+  grid-column: span 2;
+}
+.mainSection .postContainer .imgGrid div:nth-child(4) {
+  grid-column: span 2;
+}
+.mainSection .postContainer .imgGrid div:nth-child(5) {
+  grid-column: span 2;
+}
+.mainSection .postContainer .postInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #b0b3b8;
+}
+.mainSection .postContainer .buttons {
+  width: calc(100% - 30px);
+  display: flex;
+  border-top: 1px solid #3a3b3c;
+  border-bottom: 1px solid #3a3b3c;
+  margin: 10px 1rem;
+}
+.mainSection .postContainer .buttons button {
+  width: 100%;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  color: #e4e6eb;
+  cursor: pointer;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSection .postContainer .buttons button:hover {
+  background-color: #4e4f50;
+}
+.mainSection .postContainer .buttons button i {
+  display: inline-block;
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/G49NCMUgqwv.png");
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+  margin-right: 1rem;
+}
+.mainSection .postContainer .buttons button i.like {
+  background-position-y: -201px;
+}
+.mainSection .postContainer .buttons button i.comment {
+  background-position-y: -163px;
+}
+.mainSection .postContainer .buttons button i.share {
+  background-position-y: -220px;
 }/*# sourceMappingURL=style.css.map */
