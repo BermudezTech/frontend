@@ -10,7 +10,31 @@ body::-webkit-scrollbar-thumb
 
 body::-webkit-scrollbar-button  
     display: block
+    height: 16px
+
+body::-webkit-scrollbar-button:vertical:start:increment
+    background: transparent url(img/arrowUp.png) no-repeat
+    background-size: 60%
+    background-position-x: center
+    background-position-y: center
+
+body::-webkit-scrollbar-button:vertical:start:decrement
+    display: none
+
+body::-webkit-scrollbar-button:vertical:end:decrement
+    background: transparent url(img/arrowDownInactive.png) no-repeat
+    background-size: 60%
+    background-position-x: center
+    background-position-y: center
     height: 10px
+
+body::-webkit-scrollbar-corner
+    height: 0
+    display: none
+
+body::-webkit-scrollbar-corner 
+    height: 0
+    display: none
 
 body
     background-color: $darkGray
