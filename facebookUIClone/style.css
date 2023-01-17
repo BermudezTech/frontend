@@ -450,12 +450,12 @@ main aside:nth-child(3) {
   width: 0.8rem;
   height: 0.8rem;
 }
-.mainSection .postContainer .head .profile .time .public {
+.mainSection .postContainer .head .profile .time .public, .mainSection .postContainer .head .profile .time .friends {
   background-image: url("img/icons/public.svg");
   background-size: 100%;
   position: relative;
 }
-.mainSection .postContainer .head .profile .time .public::after {
+.mainSection .postContainer .head .profile .time .public::after, .mainSection .postContainer .head .profile .time .friends::after {
   content: "Público";
   position: absolute;
   top: -35px;
@@ -469,11 +469,17 @@ main aside:nth-child(3) {
   opacity: 0;
   transition: opacity 500ms;
 }
-.mainSection .postContainer .head .profile .time .public::after:hover {
+.mainSection .postContainer .head .profile .time .public::after:hover, .mainSection .postContainer .head .profile .time .friends::after:hover {
   display: none;
 }
-.mainSection .postContainer .head .profile .time .public:hover::after {
+.mainSection .postContainer .head .profile .time .public:hover::after, .mainSection .postContainer .head .profile .time .friends:hover::after {
   opacity: 1;
+}
+.mainSection .postContainer .head .profile .time .friends {
+  background-image: url("img/icons/friends.svg");
+}
+.mainSection .postContainer .head .profile .time .friends::after {
+  content: "Amigos";
 }
 .mainSection .postContainer .head .options {
   display: flex;
@@ -511,21 +517,6 @@ main aside:nth-child(3) {
   width: 100%;
   height: 100%;
   background-size: cover;
-}
-.mainSection .postContainer .imgGrid div:nth-child(1) {
-  grid-column: span 3;
-}
-.mainSection .postContainer .imgGrid div:nth-child(2) {
-  grid-column: span 3;
-}
-.mainSection .postContainer .imgGrid div:nth-child(3) {
-  grid-column: span 2;
-}
-.mainSection .postContainer .imgGrid div:nth-child(4) {
-  grid-column: span 2;
-}
-.mainSection .postContainer .imgGrid div:nth-child(5) {
-  grid-column: span 2;
 }
 .mainSection .postContainer .postInfo {
   width: 100%;

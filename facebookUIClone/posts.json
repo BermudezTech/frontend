@@ -4,8 +4,8 @@
         "name": "Harry Cunningham",
         "time": "20h",
         "type": "public",
-        "message": "",
-        "imgs": [],
+        "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro exercitationem recusandae sint illo nihil magnam dignissimos, possimus natus atque, voluptas vitae expedita vero minima error voluptate ratione, velit laudantium.",
+        "imgs": ["https://picsum.photos/1280/720?random=31", "https://picsum.photos/1280/720?random=32"],
         "likes": 20,
         "comments": 5,
         "shared": 0
@@ -15,8 +15,8 @@
         "name": "Deegan Mclaughlin",
         "time": "2d",
         "type": "friends",
-        "message": "",
-        "imgs": [],
+        "message": "Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro exercitationem recusandae sint illo nihil magnam dignissimos, possimus natus atque, voluptas vitae expedita vero minima error voluptate ratione, velit laudantium.",
+        "imgs": ["https://picsum.photos/1280/720?random=33"],
         "likes": 0,
         "comments": 0,
         "shared": 0
@@ -26,19 +26,19 @@
         "name": "Camren Bush",
         "time": "5m",
         "type": "public",
-        "message": "",
-        "imgs": [],
+        "message": "Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro exercitationem recusandae sint illo nihil magnam dignissimos, possimus natus atque, voluptas vitae expedita vero minima error voluptate ratione, velit laudantium.",
+        "imgs": ["https://picsum.photos/1280/720?random=34","https://picsum.photos/1280/720?random=35","https://picsum.photos/1280/720?random=36","https://picsum.photos/1280/720?random=37", "https://picsum.photos/1280/720?random=38"],
         "likes": 1,
         "comments": 2,
-        "shared": 0
+        "shared": 1
     },
     {
         "profile": "https://picsum.photos/1280/720?random=2",
         "name": "Freddie Matthews",
         "time": "20d",
         "type": "public",
-        "message": "",
-        "imgs": [],
+        "message": "Lorem4 ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro exercitationem recusandae sint illo nihil magnam dignissimos, possimus natus atque, voluptas vitae expedita vero minima error voluptate ratione, velit laudantium.",
+        "imgs": ["https://picsum.photos/1280/720?random=37", "https://picsum.photos/1280/720?random=38", "https://picsum.photos/1280/720?random=39"],
         "likes": 2,
         "comments": 0,
         "shared": 2
