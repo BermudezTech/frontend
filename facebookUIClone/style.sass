@@ -88,6 +88,10 @@ header
             &:hover
                 label
                     opacity: 1
+            &.videoGamesIcon
+                display: flex
+            &.plusIcon
+                display: none
     .menu
         display: flex
         align-items: center
@@ -115,6 +119,10 @@ header
                     width: 100%
                     height: 100%
                     border-radius: 100%
+            &.menuBtn
+                display: flex
+            &.plusBtn
+                display: none
 
 aside
     min-width: 280px
@@ -456,3 +464,57 @@ main
                         background-position-y: -163px
                     &.share
                         background-position-y: -220px
+
+@include mediaQ("1260px")
+    header
+        input
+            display: none
+        .search
+            .searchBar
+                width: 40px
+                padding: 0
+                justify-content: center
+
+@include mediaQ("1100px")
+    main
+        justify-content: flex-start
+        margin-left: calc(calc(calc(100% - 300px) - 500px) / 2)
+        aside:nth-child(1)
+            display: none
+    header
+        .links
+            width: 40%
+            a
+                &.videoGamesIcon
+                    display: none
+                &.plusIcon
+                    display: flex
+        .menu
+            gap: .4rem
+            button
+                &.menuBtn
+                    display: none
+                &.plusBtn
+                    display: flex
+
+@include mediaQ("900px")
+    main
+        justify-content: center
+        margin-left: 0
+        aside:nth-child(3)
+            display: none
+
+@include mediaQ("700px")
+    header
+        .links
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            a
+                display: none
+
+@include mediaQ("500px")
+    .mainSection
+        width: 100%
+        .postContainer .buttons-thoughts .feelingsBtn
+            display: none
