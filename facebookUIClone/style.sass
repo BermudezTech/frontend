@@ -1,5 +1,17 @@
 @import 'setup'
 
+body::-webkit-scrollbar
+    display: block
+    width: 1rem
+    background-color: #424242
+
+body::-webkit-scrollbar-thumb
+    background-color: #686868
+
+body::-webkit-scrollbar-button  
+    display: block
+    height: 10px
+
 body
     background-color: $darkGray
 
@@ -132,6 +144,14 @@ aside
     color: white
     font-weight: 600
     overflow-y: auto
+    &::-webkit-scrollbar
+        width: 10px
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar-thumb
+        border-radius: 10px
+    &:hover::-webkit-scrollbar-thumb
+        background-color: $grayHover
 
 aside
     .menu-btn
