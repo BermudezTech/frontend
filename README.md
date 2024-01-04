@@ -1,7 +1,7 @@
 # Frontend repository
 
 This repository contains some of the web development projects I've been making through my entire learning process, and some other 
-projects which doesn't require a full repository. You can check any of this projects by going to: https://bermudezweb.ga/frontend/foldername. Here is the description of the different folders in this repository:
+projects which doesn't require a full repository. You can check any of this projects by going to: https://bermudeztech.com/proyectos/foldername. Here is the description of the different folders in this repository:
 
 ## allipingenieria
 
